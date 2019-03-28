@@ -1,0 +1,115 @@
+* {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+
+body {
+  background: #123;
+  color: white;
+  font-family: "IBM Plex Sans", sans-serif;
+  font-size: 14px;
+  margin: 0;
+}
+
+a {
+  color: white;
+}
+
+header {
+  background: #012;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 30px;
+  line-height: 50px;
+  padding-left: 20px;
+}
+
+header nav {
+  justify-self: flex-end;
+  line-height: 50px;
+  padding-right: 20px;
+}
+
+header nav a {
+  padding-left: 20px;
+  text-decoration: none;
+}
+
+header nav a:hover {
+  text-decoration: underline;
+}
+
+section.intro {
+  background-image: url(../img/background.jpg);
+  background-size: cover;
+  height: 100vh;
+  padding: 20vh 20px;
+  font-size: 18px;
+}
+
+section.intro p.big {
+  font-size: 48px;
+  font-weight: 300;
+  margin: 0;
+}
+
+section.gallery {
+  padding: 20px;
+  background: #345;
+}
+
+section.gallery h2 {
+  text-align: center;
+}
+
+section.gallery .gallery-wrap {
+  display: grid;
+  grid-gap: 20px;
+}
+
+@media (min-width: 550px) {
+  section.gallery .gallery-wrap {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 20px;
+  }
+}
+
+footer {
+  padding: 20px;
+  color: #678;
+}
+
+@media (min-width: 550px) {
+  footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+  }
+
+  footer .links {
+    justify-self: flex-end;
+    text-align: right;
+  }
+}
+
+footer ul {
+  margin: 0;
+  padding: 0;
+}
+
+footer li {
+  list-style-type: none;
+  line-height: 2;
+}
+
+footer li a {
+  color: #678;
+}
